@@ -4,5 +4,6 @@ metadata:
   name: error-image
   namespace: roboshop-dev
 spec:
-  - name: nginx
-    image: nginxxxx
+  containers:
+    - name: nginx
+      image: nginxxxx
