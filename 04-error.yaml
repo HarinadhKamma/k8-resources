@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+namespace: roboshop-dev
+metadata:
+  name: error-image
+spec:
+  - name: nginx
+    image: nginxxxx
