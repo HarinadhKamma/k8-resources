@@ -1,9 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: error-image
-  namespace: roboshop-dev
+  name: error-imag
+  namespace: roboshop
 spec:
   containers:
-    - name: nginx
-      image: nginxxxx
+    # - name: nginx
+    #   image: nginxxxx
+      - name: almalinux
+        image: almalinux:9 
