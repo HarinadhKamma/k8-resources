@@ -9,8 +9,8 @@ spec:
   containers:
     - name: nginx
       image: nginx
-  env:
-  - name: course
-    value: devops
-  - name: job
-    value: getasap
+      env:
+        - name: course
+          value: devops
+        - name: job
+          value: getasap
