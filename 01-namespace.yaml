@@ -1,10 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: roboshop
+  name: roboshop-dev
   labels:
-   project: roboshop
-spec:
-  containers:
-   - name: nginx
-     image: nginx
+    environment: dev
+    project: roboshop
