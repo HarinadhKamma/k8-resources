@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: rs-demo
+    # these are replica set labels
+  labels:
+    name: roboshop
+    component: frontend
+spec:
+  replicas: 3
+  selector:
+  # These labels are selcted to pods 
+    matchLabels:
+      name: roboshop
+      component: frontend
+  # pod definition
+  template:
+    metadata:
+    # pod specific label configuration
+       labels:
+        name: roboshop
+        component: frontend
+    spec:
+      containers:
+        - name: nginx
+          image: nginx

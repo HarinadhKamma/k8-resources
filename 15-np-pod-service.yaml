@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: np-pod-service
+  labels:
+     name: nodeportdemo
+     componentname: frontend
+     environment: dev
+spec:
+  containers:
+    - name: nginx
+      image: nginx
