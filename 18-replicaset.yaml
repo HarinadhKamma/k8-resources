@@ -16,6 +16,7 @@ spec:
   # pod definition
   template:
     metadata:
+       name: test-rs
     # pod specific label configuration
        labels:
         name: roboshop
