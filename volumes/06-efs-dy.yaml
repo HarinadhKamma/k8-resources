@@ -6,6 +6,7 @@ provisioner: efs.csi.aws.com
 parameters:
   provisioningMode: efs-ap
   fileSystemId: fs-002fb7d39e16ab0de
+  directoryPerms: "700"
   basePath: "/roboshop" # optional
 
 ---
@@ -16,7 +17,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
-  storageClassName: efs-sc
+  storageClassName: efs-dynamic
   resources:
     requests:
       storage: 5Gi
