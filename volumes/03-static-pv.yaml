@@ -31,12 +31,12 @@ metadata:
   name: app
 spec:
   containers:
-  - name: app
-    image: nginx
-    volumeMounts:
-    - name: nginx-html
-      mountPath: /usr/share/nginx/html
+    - name: app
+      image: nginx
+      volumeMounts:
+        - name: app
+          mountPath: /usr/share/nginx/html
   volumes:
-  - name: persistent-storage
-    persistentVolumeClaim:
-      claimName: ebs-claim
+    - name: persistent-storage
+      persistentVolumeClaim:
+        claimName: ebs-claim
